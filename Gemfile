@@ -18,6 +18,7 @@ group :development do
 	# Use sqlite3 as the development database for Active Record
 	gem 'sqlite3'
 	gem 'pry-rails'
+	gem 'letter_opener_web'
 end
 
 # Use Puma as the app server

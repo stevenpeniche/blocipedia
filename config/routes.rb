@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
+
   get 'users/index'
 
 	devise_for :users
 
-	devise_scope :user do
-  	root to: "devise/sessions#new"
-	end
+	mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
 end
