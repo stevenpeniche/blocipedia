@@ -19,6 +19,7 @@ group :development do
 	gem 'sqlite3'
 	gem 'pry-rails'
 	gem 'letter_opener_web'
+	gem 'faker'
 end
 
 # Use Puma as the app server
