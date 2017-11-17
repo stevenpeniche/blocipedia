@@ -47,6 +47,9 @@ gem 'bootstrap-sass'
 # Authentication solution
 gem 'devise'
 
+# Authorization solution
+gem 'pundit'
+
 group :development do
 	gem 'listen', '~> 3.0.5'
 end
