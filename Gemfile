@@ -56,6 +56,9 @@ gem 'stripe'
 # Sensitive data solution
 gem 'figaro', '1.0'
 
+# Markdown processing solution
+gem 'redcarpet'
+
 group :development do
 	gem 'listen', '~> 3.0.5'
 end
