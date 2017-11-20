@@ -5,4 +5,12 @@ class WikiPolicy < ApplicationPolicy
 		@user = user
 		@wiki = wiki
 	end
+
+	def show?
+		wiki.user == user || user.admin? || wiki.private == false || wiki.users.include?(user)
+	end
+
+	def edit?
+		wiki.user == user || user.admin? || wiki.private == false || wiki.users.include?(user)
+	end
 end
